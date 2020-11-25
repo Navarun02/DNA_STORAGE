@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+from tkinter.filedialog import askopenfilename
+import subprocess
+import os 
+import sys
+file_path = askopenfilename()
+filename = os.path.basename(file_path)
+subprocess.run(["open", file_path])
+subprocess.run(["./encode.sh", filename])
+subprocess.run(["open", os.path.dirname(file_path)+"/encoded.txt"])
