@@ -12,6 +12,6 @@ zip $file_zip $file_input
 
 cd ../en_decode
 
-data_encoded="data_encoded$filename.txt"
+data_encoded="encoded.txt"
 
 ./dna_encoder_decoder --n=12472 --k=9000 --encode --input=../data/$file_zip --output=../data/$data_encoded
