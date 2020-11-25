@@ -5,6 +5,6 @@ import os
 import sys
 file_path = askopenfilename()
 filename = os.path.basename(file_path)
-subprocess.run(["open", file_path])
+subprocess.run(["xdg-open", file_path])
 subprocess.run(["./decode.sh", filename])
-subprocess.run(["open", os.path.dirname(file_path)+"/decoded.zip"])
+subprocess.run(["xdg-open", os.path.dirname(file_path)+"/decoded.zip"])
